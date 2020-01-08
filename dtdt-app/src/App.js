@@ -14,7 +14,7 @@ function App() {
       />
       <header className="App-header">
         <p>
-          Dog Training Data Tool
+          Project Boop
         </p>
         <img src={baloo} alt="mascot"/>
         <p>
