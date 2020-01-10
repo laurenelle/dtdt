@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import baloo from './majesticBalooie.png';
-import Button from 'react-bootstrap/Button';
+import { Button, Form, Group, Label, Control, Text } from 'react-bootstrap';
 
 function App() {
   return (
@@ -18,7 +18,17 @@ function App() {
         </p>
         <img src={baloo} alt="mascot"/>
         <p>
-          <Button>Boop</Button>
+          <Form>
+            <Form.Group controlId="formPlanSearch">
+              <Form.Label>Search for a training plan: </Form.Label>
+              <Form.Control type="search" placeholder="husbandry" />
+              <Form.Text className="text-muted">
+              </Form.Text>
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Boop
+            </Button>
+          </Form>
         </p>
       </header>
     </div>
